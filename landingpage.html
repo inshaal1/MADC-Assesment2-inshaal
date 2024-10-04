@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asssesment2-inshaal-landing</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="sidebackground"></div>
+
+        <div class="head">
+            <img src="smalltwitter.png" alt="Twitter Logo" >
+            <h1>Happening Now</h1>
+            <h2>Join Twitter Today</h2>
+
+            <div class="buttoncontainer">  
+                <button class="Google">
+                    <img src="google.png" alt="Google Logo"> Signup with Google
+                </button>
+                <button class="Apple">
+                    <img src="apple.png" alt="Apple Logo"> Signup with Apple
+                </button>
+                <button class="email">Signup with phone or email</button>
+            </div>
+
+            <div class="paragraphs">
+                <p>By signing up, you agree to the 
+                    <a href="#">Terms of Service</a> and 
+                    <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use</a>.
+                </p>
+                <p>Already have an account? 
+                    <a href="#">Log in</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+          About &nbsp; Help Center &nbsp; 
+          Terms Of Service &nbsp; Cookie Policy &nbsp;
+          Ads info &nbsp; Blog &nbsp; Status &nbsp; 
+          Careers &nbsp; Brand Resources &nbsp; A
+          dvertising &nbsp; Marketing &nbsp; 
+          Twitter for Business &nbsp; Developers &nbsp; 
+          Directory &nbsp; Settings &nbsp; &#9400; 2021 Twitter, Inc.
+        </p>
+    </div>
+</body>
+</html>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main {
+            display: flex;
+            flex: 1; 
+        }
+        .sidebackground {
+            flex: 1;
+            background-image: url('backtwitter.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .head {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px; 
+        }
+        .head img {
+            width: 20px; 
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+        .buttoncontainer {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        button {
+            background: #f9f7f7;
+            border: 1px solid rgb(182, 181, 181);
+            font-weight: bold;
+            padding: 15px 45px; 
+            cursor: pointer;
+            border-radius: 20px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; 
+        }
+        button img {
+            width: 20px;
+            height: 20px;
+        }
+        button:hover {
+            background: rgb(73, 73, 75);
+            color: white;
+        }
+      
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #6e767d;
+            padding: 10px; 
+            background-color: #f1f1f1;
+            margin:0;
+        }
+        
+    </style>

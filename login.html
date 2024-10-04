@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assesment2-inshaal-Login</title>
+</head>
+<body>
+    <div class="logincontainer">
+        <div class="login">
+            <img src="smalltwitter.png" alt="Twitter Logo" class="logo">
+
+            <h1>Log in to Twitter</h1>
+
+            <form>
+                <input  class="input"placeholder="Phone number, email address" >
+                <input  class="input"placeholder="Password">
+                <button class="login-button">Log In</button>
+            </form>
+
+            <div class="links">
+                <a href="#" class="forgot">Forgot password?</a>
+                <a href="#" class="signup">Sign up to Twitter</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+    <style>
+     
+        body {
+            font-family: Arial, sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logincontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .login {      
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        .logo {
+            width: 40px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;         
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #1da1f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .links a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>

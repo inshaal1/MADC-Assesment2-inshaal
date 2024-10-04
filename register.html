@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create an Account</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .account {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: left;
+        }
+        
+        .logo {
+            width: 40px;
+            margin: 0 auto 20px; /* Center the logo */
+            display: block; /* Center the logo */
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+        .month-dropdown {
+            width: 200%; 
+        }
+
+        a {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #1da1f2;
+            text-decoration: none;
+        }
+
+        .dob {
+            margin: 10px 0 15px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .dobp {
+            margin-bottom: 10px;
+            color: #657786;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1da1f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="account">
+        <img src="smalltwitter.png" alt="Twitter Logo" class="logo">
+        <h1>Create an account</h1>
+        <form>
+            <input placeholder="Name">
+            <input placeholder="Phone number">
+            <a href="#">Use email</a>
+            <div class="dob">Date of birth</div>
+            <p class="dobp">
+                Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante
+                phasellus metus, magna lacinia sed augue. Odio enim nascetur leo mauris vel eget.
+            </p>
+            <div class="options">
+                <select class="month-dropdown">
+                    <option value="">Month</option>
+                </select>
+                <select>
+                    <option value="">Day</option>
+                </select>
+                <select>
+                    <option value="">Year</option>
+                </select>
+            </div>
+            <button>Next</button>
+        </form>
+    </div>
+</body>
+</html>
