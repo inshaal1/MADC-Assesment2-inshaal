@@ -2,8 +2,39 @@
 <html lang="en">
 <head>
     <title>Create an Account</title>
-    <style>
-        * {
+</head>
+<body>
+    <div class="account">
+        <img src="smalltwitter.png" alt="Twitter Logo" class="logo">
+        <h1>Create an account</h1>
+        <form>
+            <input placeholder="Name">
+            <input placeholder="Phone number">
+            <a href="#">Use email</a>
+            <div class="dob">Date of birth</div>
+            <p class="dobp">
+                Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante
+                phasellus metus, magna lacinia sed augue. Odio enim nascetur leo mauris vel eget.
+            </p>
+            <div class="options">
+                <select class="month-dropdown">
+                    <option value="">Month</option>
+                </select>
+                <select>
+                    <option value="">Day</option>
+                </select>
+                <select>
+                    <option value="">Year</option>
+                </select>
+            </div>
+            <button>Next</button>
+        </form>
+    </div>
+</body>
+</html>
+
+   <style>
+  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -25,11 +56,11 @@
             width: 400px;
             text-align: left;
         }
-        
+         
         .logo {
             width: 40px;
-            margin: 0 auto 20px; /* Center the logo */
-            display: block; /* Center the logo */
+            margin: 0 auto 20px; 
+            display: block; /
         }
 
         h1 {
@@ -46,8 +77,7 @@
             font-size: 16px;
             background-color: #ffffff;
         }
-
-        select {
+ select {
             width: 100%;
             padding: 15px;
             margin: 0 5px;
@@ -96,33 +126,3 @@
             cursor: pointer;
         }
     </style>
-</head>
-<body>
-    <div class="account">
-        <img src="smalltwitter.png" alt="Twitter Logo" class="logo">
-        <h1>Create an account</h1>
-        <form>
-            <input placeholder="Name">
-            <input placeholder="Phone number">
-            <a href="#">Use email</a>
-            <div class="dob">Date of birth</div>
-            <p class="dobp">
-                Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante
-                phasellus metus, magna lacinia sed augue. Odio enim nascetur leo mauris vel eget.
-            </p>
-            <div class="options">
-                <select class="month-dropdown">
-                    <option value="">Month</option>
-                </select>
-                <select>
-                    <option value="">Day</option>
-                </select>
-                <select>
-                    <option value="">Year</option>
-                </select>
-            </div>
-            <button>Next</button>
-        </form>
-    </div>
-</body>
-</html>
