@@ -4,18 +4,22 @@
     <title>Create an Account</title>
 </head>
 <body>
-    <div class="account">
+    <div class="main">
+
         <img src="smalltwitter.png" alt="Twitter Logo" class="logo">
         <h1>Create an account</h1>
-        <form>
+
+        <div class="form">
             <input placeholder="Name">
             <input placeholder="Phone number">
             <a href="#">Use email</a>
-            <div class="dob">Date of birth</div>
-            <p class="dobp">
-                Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante
-                phasellus metus, magna lacinia sed augue. Odio enim nascetur leo mauris vel eget.
-            </p>
+            <div class="dob">
+               <p> Date of birth</p> 
+                <p class="p1" >
+                    Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante
+                    phasellus metus, magna lacinia sed augue. Odio enim nascetur leo mauris vel eget.
+                </p>
+            </div>
             <div class="options">
                 <select class="month-dropdown">
                     <option value="">Month</option>
@@ -28,101 +32,85 @@
                 </select>
             </div>
             <button>Next</button>
-        </form>
+        </div>
+
     </div>
 </body>
 </html>
 
-   <style>
-  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .account {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            width: 400px;
-            text-align: left;
-        }
-         
-        .logo {
-            width: 40px;
-            margin: 0 auto 20px; 
-            display: block; /
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        input {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            background-color: #ffffff;
-        }
- select {
-            width: 100%;
-            padding: 15px;
-            margin: 0 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            background-color: #ffffff;
-        }
-        .month-dropdown {
-            width: 200%; 
-        }
-
-        a {
-            display: block;
-            margin-bottom: 15px;
-            font-size: 14px;
-            color: #1da1f2;
-            text-decoration: none;
-        }
-
-        .dob {
-            margin: 10px 0 15px;
-            font-weight: bold;
-            color: #000;
-        }
-
-        .dobp {
-            margin-bottom: 10px;
-            color: #657786;
-        }
-
-        .options {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1da1f2;
-            color: white;
-            font-size: 16px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-    </style>
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font: bold 15px arial;
+    padding-top: 10%;
+}
+.logo{
+    width: 50px;
+    margin-bottom: 20px;
+}
+h1{
+    display: flex;
+    justify-content: flex-start;
+    width:65%;
+    margin-bottom: 20px; 
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width:400px;
+    margin:10px;
+    padding:2px;
+}
+input{
+    width: 80%;
+    margin:10px;
+    padding:10px;
+    border: 1px solid rgb(201, 200, 200);
+    border-radius: 5px;
+}
+a {
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    margin-top: 15px;  
+    font-weight: lighter;  
+}
+.dob p{
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    margin-top: 15px;
+}
+.p1{
+    font-weight: lighter; 
+    color: rgb(191, 188, 188); 
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%; 
+    margin-top: 10px;
+}
+select{
+   padding: 10px;
+   margin-left: 0px;
+   margin-right: 0px;
+   width: 32%;
+}
+button {
+ width: 100%;  
+ padding: 10px;
+ background-color: #1da1f2;
+ color: white;
+ font-size: 16px;
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+}
+</style>
