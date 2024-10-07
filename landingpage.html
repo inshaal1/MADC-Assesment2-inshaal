@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>asssesment2-inshaal-landing</title>
+   <title>asssesment2-inshaal-landing</title>
 </head>
 <body>
     <div class="main">
 
-        <div class="sidebackground"></div>
+        <div class="sidebackground"> <img src="backtwitter.png" alt="logo"></div>
 
         <div class="head">
             <img src="smalltwitter.png" alt="Twitter Logo" >
@@ -39,8 +39,7 @@
           About &nbsp; Help Center &nbsp; 
           Terms Of Service &nbsp; Cookie Policy &nbsp;
           Ads info &nbsp; Blog &nbsp; Status &nbsp; 
-          Careers &nbsp; Brand Resources &nbsp; 
-          Advertising &nbsp; Marketing &nbsp; 
+          Careers &nbsp; Brand Resources &nbsp; Advertising &nbsp; Marketing &nbsp; 
           Twitter for Business &nbsp; Developers &nbsp; 
           Directory &nbsp; Settings &nbsp; &#9400; 2021 Twitter, Inc.
         </p>
@@ -48,78 +47,71 @@
 </body>
 </html>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .main {
-            display: flex;
-            flex: 1; 
-        }
-        .sidebackground {
-            flex: 1;
-            background-image: url('backtwitter.png'); 
-            background-size: cover;
-            background-position: center;
-        }
-        .head {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 50px; 
-        }
-        .head img {
-            width: 20px; 
-        }
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-        h2 {
-            font-size: 24px;
-            font-weight: normal;
-            margin-top: 10px;
-        }
-        .buttoncontainer {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        button {
-            background: #f9f7f7;
-            border: 1px solid rgb(182, 181, 181);
-            font-weight: bold;
-            padding: 15px 45px; 
-            cursor: pointer;
-            border-radius: 20px;
-            gap: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%; 
-        }
-        button img {
-            width: 20px;
-            height: 20px;
-        }
-        button:hover {
-            background: rgb(73, 73, 75);
-            color: white;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100%;
+    }
+    .main{
+    display: flex;
+    flex-direction: row;
+}
+    .sidebackground{
+    flex:1;
+    }
+    .sidebackground img{
+        width:auto;
+        height:auto;
+    }
+
+     .head{ 
+        justify-content: center;
+        display:flex;
+        flex:2;
+        flex-direction:column;
+        padding:50px;
+        font-weight: bold;
+    } 
+    .head img{
+      width:40px;
+      padding-left: 10px;
       
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #6e767d;
-            padding: 10px; 
-            background-color: #f1f1f1;
-            margin:0;
-        }
-        
-    </style>
+    }
+    h1{
+        font-size:60px;
+        margin:0;
+        padding:10px;
+    }
+    h2{
+        margin:0;
+        padding:10px;
+        font-size:24px;
+    }
+    .buttoncontainer{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        gap:10px;
+        padding-bottom: 20px;
+    }
+    .buttoncontainer img{
+        width: 30px;
+    }
+    button{
+      border-radius: 20px;
+      padding:10px;
+      font-size:20px;
+      border:solid 1px rgb(204, 201, 201);
+      background-color: white;
+    }
+.paragraphs{
+    font-size: 15px;
+}
+.footer {
+    display: flex;
+    justify-content:center; 
+    padding: 10px ;
+    width: 100%;
+    }
+</style>
